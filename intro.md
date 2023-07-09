@@ -1,10 +1,6 @@
 # Bienvenido al libro de Pruebas
 
-
-:::{figure-md} markdown-fig
-<img src="chap_01/img/portada.png" alt="jay_cummings_proofs" class="bg-primary mb-1" width="200px">
-This is a caption in **Markdown**!
-:::
+![jay_cummings_proofs](chap_01/img/portada.png)
 
 ## Motivación
 Este libro de texto está diseñado para estudiantes. En lugar del estilo típico de definición-teorema-demostración-repetición, este texto incluye comentarios, explicaciones y la motivación necesaria para adentrarse en el mundo de las matemáticas.  Además, docenas de demostraciones van precedidas de "trabajo previo" o un esquema de la demostración para brindar a los estudiantes una visión general y una explicación de cómo podrían llegar a ella por sí mismos.
