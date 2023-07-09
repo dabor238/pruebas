@@ -1,1 +1,0 @@
-# Problemas del tablero de ajedrez
