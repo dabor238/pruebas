@@ -1,1 +1,7 @@
-# Pruebas Intuitivas
+# [CAPÍTULO 1] Pruebas Intuitivas
+
+
+## El rol de la intuición 
+
+"Intuición", en la matemática moderna, se refiere a la acumulación de actitudes (incluyendo creencias y opiniones) derivadas de la experiencia, tanto individual como cultural. Está estrechamente relacionada con el conocimiento matemático, que constituye la base de la intuición. El papel principal de la intuición es proporcionar un fundamento conceptual que direccione al estudiante a descubrir las aplicaciones de la matemática. El papel de la intuición en la investigación consiste en proporcionar la "suposición educada", que puede resultar verdadera o falsa; pero en cualquier caso, no se puede progresar sin ella e incluso una suposición falsa puede conducir al progreso. Así, la intuición también desempeña un papel importante en la evolución de los conceptos matemáticos. El avance del conocimiento matemático periódicamente revela fallos en la intuición cultural; esto da lugar a "crisis", cuya solución resulta en una intuición más madura. Por lo tanto, la base última de las matemáticas modernas es la intuición matemática, y es en este sentido en el que la doctrina Intuicionista de <a href="https://es.wikipedia.org/wiki/Luitzen_Egbertus_Jan_Brouwer" target="_blank">Brouwer</a> y sus seguidores es correcta. Los métodos de enseñanza modernos reconocen este papel de la intuición al reemplazar el modo de "haz esto, haz aquello" por una actitud de "¿qué debería hacerse a continuación?", que apela al trasfondo intuitivo ya desarrollado. Es de esta manera que se puede inculcar adecuadamente en el estudiante la comprensión y apreciación del nuevo conocimiento matemático.
+

@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Resultados de denominación" href="nombrando_resultados.html" />
-    <link rel="prev" title="Pruebas Intuitivas" href="pruebas_intuitivas.html" />
+    <link rel="prev" title="[CAPÍTULO 1] Pruebas Intuitivas" href="pruebas_intuitivas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,10 +157,10 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="pruebas_intuitivas.html">Pruebas Intuitivas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Ejemplo Archivo Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Ejemplo con notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Ejemplo con MyST Markdown</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="pruebas_intuitivas.html">[CAPÍTULO 1] Pruebas Intuitivas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Problemas del tablero de ajedrez</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nombrando_resultados.html">Resultados de denominación</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principio_casillero.html">El Principio del casillero o palomar</a></li>
@@ -337,7 +337,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -353,6 +355,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1 Problemas del tablero de ajedrez</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -364,6 +374,35 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problemas-del-tablero-de-ajedrez">
 <h1>Problemas del tablero de ajedrez<a class="headerlink" href="#problemas-del-tablero-de-ajedrez" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>1.1 Problemas del tablero de ajedrez<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Suponga que tiene un tablero de ajedrez (cuadrícula de 8x8 cuadrados) y un montón de fichas de dominó (cada ficha de 2x1 cuadrados), de modo que cda ficha de dominó puede cubrir perfectamente dos cuadrados del tablero de ajedrez <a class="footnote-reference brackets" href="#nota1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p><img alt="tablero ajedrez 01" src="../_images/01_fig.jpg" /></p>
+<p>Tenga en cuenta que con 32 fichas de dominó puede cubrir las 64 casillas del tablero de ajedrez. Hay muchas
+maneras diferentes de colocar las fichas de dominó para hacer esto, pero una forma es cubrir la primera columna con 4 fichas de dominó de un extremo a otro, cubrir la segunda columna con 4 fichas de dominó y así sucesivamente.</p>
+<p><img alt="tablero ajedrez 02" src="../_images/02_fig.jpg" /></p>
+<p>Por supuesto, esa no es la única manera. Aquí hay una forma ingeniosa de cubrir todos los cuadrados:</p>
+<p><img alt="tablero ajedrez 03" src="../_images/03_fig.jpg" /></p>
+<p>Las matemáticas se basan en definiciones, así que démosle un nombre a esta idea de cubrir todos
+los cuadrados. Además, no lo definamos solo para tableros de 8 × 8 ; permitamos que la definición se
+aplique a tableros de otras dimensiones.</p>
+<div class="tip admonition" id="def-1-1">
+<p class="admonition-title">Definición 1.1</p>
+<p>Definición 1.1 Se denomina “cubierta perfecta del tablero” a cubrir el tablero de ajedrez de m × n con fichas de dominó de 2 × 1 sin que existan casillas descubiertas, y sin fichas de dominó apiladas o colgando fuera del tablero de ajedrez.</p>
+</div>
+<p>Como demostramos anteriormente, existen cubiertas perfectas del tablero de ajedrez de 8 × 8. Este es un libro sobre demostraciones, así que escribamos esto como una <strong>proposición</strong> (algo que es verdadero y requiere demostración) y luego escribamos una demostración formal de este hecho.</p>
+<div class="tip admonition" id="prop-1-2">
+<p class="admonition-title">Proposición 1.2</p>
+<p>Proposición 1.2. Existe una cubierta perfecta de un tablero de ajedrez de 8 × 8.</p>
+</div>
+<p>Antes de hacer otras demostraciones, discutiremos de algunos de los ingredientes clave de las demostraciones.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="nota1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son
+simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
+</aside>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -403,7 +442,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pruebas Intuitivas</p>
+        <p class="prev-next-title">[CAPÍTULO 1] Pruebas Intuitivas</p>
       </div>
     </a>
     <a class="right-next"
@@ -424,6 +463,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1 Problemas del tablero de ajedrez</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
