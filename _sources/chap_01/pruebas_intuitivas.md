@@ -1,15 +1,5 @@
 # Pruebas Intuitivas
 
-## Saepe licet arma non fraude arboribus Thybrin
-
-Lorem markdownum pacis Astypaleia *colebat acres*. Tellus adventuque quod
-**quae** certe reposcunt navigat, et omni celatus deteriorque inque inattenuata
-**Venus** atque per. Saxa delenda nuda simul est, vim totos, et polis dextro
-*illum* arduus mortalibus formamque.
-
-1. Sed avitum aliter quod balatum metum oraque
-2. Humiles cortice
-3. Timeo ante coercet vulnus
 
 ## Clade Terram
 
@@ -42,3 +32,4 @@ animum meique, incognita seque? Superbia parentem sequitur licet gladio habet
 Patremque puniceum Hymetti et fretum nulla, habet est, nec calenti [vidit
 annis](http://vocatum-nolle.org/conplexa.html) quoque, iam reparet. Exclamat
 volucrem et **bina** dixit et duorum ieiunia; coniugis limite spectabilis.
+
