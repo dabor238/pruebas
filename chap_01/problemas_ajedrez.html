@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Resultados de denominación" href="nombrando_resultados.html" />
-    <link rel="prev" title="Pruebas Intuitivas" href="pruebas_intuitivas.html" />
+    <link rel="prev" title="[CAPÍTULO 1] Pruebas Intuitivas" href="pruebas_intuitivas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,7 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Ejemplo Archivo Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Ejemplo con notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Ejemplo con MyST Markdown</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="pruebas_intuitivas.html">Pruebas Intuitivas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="pruebas_intuitivas.html">[CAPÍTULO 1] Pruebas Intuitivas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Problemas del tablero de ajedrez</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nombrando_resultados.html">Resultados de denominación</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principio_casillero.html">El Principio del casillero o palomar</a></li>
@@ -360,9 +360,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etiam-troes-limite-nec-iniustaque-hostibus-animum">Etiam Troes limite nec iniustaque hostibus animum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alta-demunt">Alta demunt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adit-mallet-duo">Adit mallet duo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1 Problemas del tablero de ajedrez</a></li>
 </ul>
             </nav>
         </div>
@@ -376,63 +374,31 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problemas-del-tablero-de-ajedrez">
 <h1>Problemas del tablero de ajedrez<a class="headerlink" href="#problemas-del-tablero-de-ajedrez" title="Permalink to this heading">#</a></h1>
-<p>Suponga que tiene un tablero de ajedrez (cuadrícula de 8x8 cuadrados) y un montón de fichas de dominó (cada ficha de 2x1 cuadrados), de modo que cda ficha de dominó puede cubrir perfectamente dos cuadrados del tablero de ajedrez <a class="footnote-reference brackets" href="#nota1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
-<p><img alt="tablero ajedrez 01" src="chap_01/chap_01/img/01_fig.jpg" /></p>
+<section id="id1">
+<h2>1.1 Problemas del tablero de ajedrez<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Suponga que tiene un tablero de ajedrez (cuadrícula de 8x8 cuadrados) y un montón de fichas de dominó (cada ficha de 2x1 cuadrados), de modo que cda ficha de dominó puede cubrir perfectamente dos cuadrados del tablero de ajedrez <a class="footnote-reference brackets" href="#nota1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p><img alt="tablero ajedrez 01" src="../_images/01_fig.jpg" /></p>
 <p>Tenga en cuenta que con 32 fichas de dominó puede cubrir las 64 casillas del tablero de ajedrez. Hay muchas
 maneras diferentes de colocar las fichas de dominó para hacer esto, pero una forma es cubrir la primera columna con 4 fichas de dominó de un extremo a otro, cubrir la segunda columna con 4 fichas de dominó y así sucesivamente.</p>
-<p><img alt="tablero ajedrez 02" src="chap_01/chap_01/img/02_fig.jpg" /></p>
+<p><img alt="tablero ajedrez 02" src="../_images/02_fig.jpg" /></p>
 <p>Por supuesto, esa no es la única manera. Aquí hay una forma ingeniosa de cubrir todos los cuadrados:</p>
-<p><img alt="tablero ajedrez 03" src="chap_01/chap_01/img/03_fig.jpg" /></p>
+<p><img alt="tablero ajedrez 03" src="../_images/03_fig.jpg" /></p>
 <p>Las matemáticas se basan en definiciones, así que démosle un nombre a esta idea de cubrir todos
 los cuadrados. Además, no lo definamos solo para tableros de 8 × 8 ; permitamos que la definición se
 aplique a tableros de otras dimensiones.</p>
-<div class="tip admonition">
-<p class="admonition-title">Definición</p>
-<p><em>Definición 1.1</em> Se denomina “cubierta perfecta del tablero” a cubrir el tablero de ajedrez de m × n con fichas de dominó de 2 × 1 sin que existan casillas descubiertas, y sin fichas de dominó apiladas o colgando fuera del tablero de ajedrez.</p>
+<div class="tip admonition" id="def-1-1">
+<p class="admonition-title">Definición 1.1</p>
+<p>Definición 1.1 Se denomina “cubierta perfecta del tablero” a cubrir el tablero de ajedrez de m × n con fichas de dominó de 2 × 1 sin que existan casillas descubiertas, y sin fichas de dominó apiladas o colgando fuera del tablero de ajedrez.</p>
 </div>
-<section id="etiam-troes-limite-nec-iniustaque-hostibus-animum">
-<h2>Etiam Troes limite nec iniustaque hostibus animum<a class="headerlink" href="#etiam-troes-limite-nec-iniustaque-hostibus-animum" title="Permalink to this heading">#</a></h2>
-<p>Lorem markdownum rettulit quod lingua. Ad magnas convocat ostro alto fuerat
-abest redeunt diu leto sensum <em>esset eodem qui</em> tritis Phrygii his neque et o.
-Thisbe inlustre nam vix ventusve satis, dubium linguas equidem falle, et. Domino
-et census lac vestem cursus et, geniti <strong>recingunt</strong>.</p>
-<blockquote>
-<div><p>Sedem addidit. Mei secures nymphas me ardent caeleste neque, aut, suo <em>vincis</em>
-carpis ferebat evitabile cervus virgineos!</p>
-</div></blockquote>
-</section>
-<section id="alta-demunt">
-<h2>Alta demunt<a class="headerlink" href="#alta-demunt" title="Permalink to this heading">#</a></h2>
-<p>Vicit illa velut, committitur, lilia Cephaloque avari diva, ubi miratur, quas
-diversa membra, neu. Quem formae in natis munusque trifida atque Hylactor
-incurvis natura septemplice dabatur inritamenta teque dumque obsisto.</p>
-<p>Membris muris subcrescit rexit, cognataque scelus si aut silvae glaebas
-perfregit nitebat medicamine quos cognataque et falcato, furit. Repetitum in
-vale vimque adferre surgere tempore temperat vivacia dirusque <strong>animosque
-graviore</strong> trepidoque. Ossa tollere excusat tot mecum plenis <a class="reference external" href="http://www.etanilem.io/">volumine
-quaerenti</a> parens poteramus denique. Grave quatit
-mariti lumen. Huic edax, iura causas: ense: quoque maior: verborum invidiam.</p>
-</section>
-<section id="adit-mallet-duo">
-<h2>Adit mallet duo<a class="headerlink" href="#adit-mallet-duo" title="Permalink to this heading">#</a></h2>
-<p>Tantae navale, superis profana ille: angue hastam sidereis, ab haec mea. Expulit
-non ore murra et bacaque <em>ridentem</em>; aras quae, in loci addidit remis nam colit
-et. Ira radiis vulnera, iam ac est repetens Crantoris pericula tu gentis robora?
-Neque ad sensit, <em>igne locutum</em> Aglauros esse ilia, tuum sublatus, silvas umquam
-lacusque <a class="reference external" href="http://lacertos-lugentis.org/argum.html">Hector mirabantur recentes</a>
-victorem! Dominae laesa.</p>
-<p>Contorto genus: <em>bellis</em> gerit, tuas incursu Claros epops in quam setae gramina
-altera iam est <em>et imitetur</em>. Evincitque remoto et neque cernes, acto cum! Modo
-cur; perpetuum obscenae quod fer necopinum relictas naris.</p>
-<p>Moventem permiscuit hos ut, <a class="reference external" href="http://www.seque.net/armisauras">me</a> haec
-puerilibus nemus debes, nec instructo leti ostendit et <em>Colchis</em>, vigoris leve.
-Non Aulide, latratibus tulit frons facile et diduxit ut qvem erroris illa? Dona
-in frondibus vernum deum plurima, rabidi ore mons, non in corpore tamen,
-<a class="reference external" href="http://intrarunt.com/oderit.html">vis</a> ore ad. Radiis papaver agrestes et tenet
-facit ad solus pectore.</p>
+<p>Como demostramos anteriormente, existen cubiertas perfectas del tablero de ajedrez de 8 × 8. Este es un libro sobre demostraciones, así que escribamos esto como una <strong>proposición</strong> (algo que es verdadero y requiere demostración) y luego escribamos una demostración formal de este hecho.</p>
+<div class="tip admonition" id="prop-1-2">
+<p class="admonition-title">Proposición 1.2</p>
+<p>Proposición 1.2. Existe una cubierta perfecta de un tablero de ajedrez de 8 × 8.</p>
+</div>
+<p>Antes de hacer otras demostraciones, discutiremos de algunos de los ingredientes clave de las demostraciones.</p>
 <hr class="footnotes docutils" />
 <aside class="footnote brackets" id="nota1" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
 <p>A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son
 simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
 </aside>
@@ -476,7 +442,7 @@ simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pruebas Intuitivas</p>
+        <p class="prev-next-title">[CAPÍTULO 1] Pruebas Intuitivas</p>
       </div>
     </a>
     <a class="right-next"
@@ -506,9 +472,7 @@ simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etiam-troes-limite-nec-iniustaque-hostibus-animum">Etiam Troes limite nec iniustaque hostibus animum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alta-demunt">Alta demunt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adit-mallet-duo">Adit mallet duo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1 Problemas del tablero de ajedrez</a></li>
 </ul>
   </nav></div>
 
