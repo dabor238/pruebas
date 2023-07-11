@@ -33,11 +33,19 @@ Como demostramos anteriormente, existen cubiertas perfectas del tablero de ajedr
 :name: prop_1.2
 Proposición 1.2. Existe una cubierta perfecta de un tablero de ajedrez de 8 × 8.
 `````
-Antes de hacer otras demostraciones, discutiremos de algunos de los ingredientes clave de las demostraciones. 
+Antes de hacer otras demostraciones, discutiremos algunos de los ingredientes clave de las demostraciones. 
+
+**La idea de una prueba:** La proposición afirma que "existe" una cubierta perfecta. Al decir "existe" significa que hay al menos una forma posible de cubrir el tablero. Por lo tanto, cualquier proposición como esta puede probarse simplemente presentando una forma de cubrir el tablero y esta proposición estará satisfecha. 
+
+**La prueba:** Observe que la siguiente imagen es una opción de cubierta perfecta. 
+![tablero ajedrez 04](img/04_fig.png)
+
+Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado así la proposición. 
+
+Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que hemos completado el argumento. Esta práctica fue introducida por el matemático Paul Halmos, que también se la llama la *lápida de Halmos* [^nota2]
 
 
 
+[^nota1]:  A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son simplemente para etiquetar las filas y las columnas del tablero de ajedrez.
 
-
-[^nota1]:  A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son 
-simplemente para etiquetar las filas y las columnas del tablero de ajedrez.
+[^nota2]: Una historia apócrifa dice que Halmos consideraba que las pruebas estaban vivas hasta que se lograban probar. Una vez probadas, morían. Y así escribió una pequeña lápida para concluir cada una de sus pruebas. 
