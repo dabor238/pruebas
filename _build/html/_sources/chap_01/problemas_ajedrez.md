@@ -35,12 +35,14 @@ Proposición 1.2. Existe una cubierta perfecta de un tablero de ajedrez de 8 × 
 `````
 Antes de hacer otras demostraciones, discutiremos algunos de los ingredientes clave de las demostraciones. 
 
-**La idea de una prueba:** La proposición afirma que "existe" una cubierta perfecta. Al decir "existe" significa que hay al menos una forma posible de cubrir el tablero. Por lo tanto, cualquier proposición como esta puede probarse simplemente presentando una forma de cubrir el tablero y esta proposición estará satisfecha. 
+**La idea de una prueba:** La proposición afirma que "existe" una cubierta perfecta. Al decir "existe", significa que hay al menos una forma posible de cubrir el tablero. Por lo tanto, cualquier proposición como ésta puede probarse simplemente presentando una forma de cubrir el tablero y la proposición estará satisfecha.
 
 **La prueba:** Observe que la siguiente imagen es una opción de cubierta perfecta. 
 ![tablero ajedrez 04](img/04_fig.png)
 
-Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado así la proposición. 
+Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado la proposición 1.2
+
+. 
 
 Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que hemos completado el argumento. Esta práctica fue introducida por el matemático Paul Halmos, que también se la llama la *lápida de Halmos* [^nota2]
 
