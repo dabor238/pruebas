@@ -40,11 +40,16 @@ Antes de hacer otras demostraciones, discutiremos algunos de los ingredientes cl
 **La prueba:** Observe que la siguiente imagen es una opción de cubierta perfecta. 
 ![tablero ajedrez 04](img/04_fig.png)
 
-Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado la proposición 1.2
+Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado la proposición 1.2 [poner tumba]
 
-. 
 
 Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que hemos completado el argumento. Esta práctica fue introducida por el matemático Paul Halmos, que también se la llama la *lápida de Halmos* [^nota2]
+
+Hemos visto dos diferentes coverturas perfectas del tablero de ajedres. Cuántas pueden existir en total? Esta es una pregunta muy difícil, pero los matemáticos han encontrado la respuesta sorprendentemente grante: existen exactamente 12,988,816 coverturas perfectas. 
+
+
+
+
 
 
 
