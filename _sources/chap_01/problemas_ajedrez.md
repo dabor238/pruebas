@@ -48,7 +48,7 @@ Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que 
 Hemos visto dos diferentes coverturas perfectas del tablero de ajedres. Cuántas pueden existir en total? Esta es una pregunta muy difícil, pero los matemáticos han encontrado la respuesta sorprendentemente grante: existen exactamente 12,988,816 coverturas perfectas. 
 
 
-Esto se descubrió en 1961, mucho antes de que los ordenadores modernos pudieran descubrir la respuesta por fuerza bruta. Volviendo a si se puede cubrir un tablero de ajedrez, demostramos que un tablero de ajedrez estándar de 8 × 8 se puede cubrir perfectamente con fichas de dominó. ¿Qué pasa si tacho los cuadros inferior izquierdo y superior izquierdo, todavía podemos cubrir perfectamente los 62 cuadros restantes?
+Esto se descubrió en 1961, mucho antes de que los ordenadores modernos pudieran descubrir la respuesta por fuerza bruta [^nota3]. Volviendo a si se puede cubrir un tablero de ajedrez, demostramos que un tablero de ajedrez estándar de 8 × 8 se puede cubrir perfectamente con fichas de dominó. ¿Qué pasa si tacho los cuadros inferior izquierdo y superior izquierdo, todavía podemos cubrir perfectamente los 62 cuadros restantes?
 
 
 
