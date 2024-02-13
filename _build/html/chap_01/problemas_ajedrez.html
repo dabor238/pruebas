@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Problemas del tablero de ajedrez &#8212; Pruebas</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -66,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Resultados de denominación" href="nombrando_resultados.html" />
     <link rel="prev" title="[CAPÍTULO 1] Pruebas Intuitivas" href="pruebas_intuitivas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -128,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -140,8 +153,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Pruebas - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Pruebas - Home"/>`);</script>
   
   
 </a></div>
@@ -319,20 +332,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -372,10 +387,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problemas-del-tablero-de-ajedrez">
-<h1>Problemas del tablero de ajedrez<a class="headerlink" href="#problemas-del-tablero-de-ajedrez" title="Permalink to this headline">#</a></h1>
+<h1>Problemas del tablero de ajedrez<a class="headerlink" href="#problemas-del-tablero-de-ajedrez" title="Permalink to this heading">#</a></h1>
 <section id="id1">
-<h2>1.1 Problemas del tablero de ajedrez<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<p>Suponga que tiene un tablero de ajedrez (cuadrícula de 8x8 cuadrados) y un montón de fichas de dominó (cada ficha de 2x1 cuadrados), de modo que cda ficha de dominó puede cubrir perfectamente dos cuadrados del tablero de ajedrez <a class="footnote-reference brackets" href="#nota1" id="id2">1</a>.</p>
+<h2>1.1 Problemas del tablero de ajedrez<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Suponga que tiene un tablero de ajedrez (cuadrícula de 8x8 cuadrados) y un montón de fichas de dominó (cada ficha de 2x1 cuadrados), de modo que cda ficha de dominó puede cubrir perfectamente dos cuadrados del tablero de ajedrez <a class="footnote-reference brackets" href="#nota1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <p><img alt="tablero ajedrez 01" src="../_images/01_fig.jpg" /></p>
 <p>Tenga en cuenta que con 32 fichas de dominó puede cubrir las 64 casillas del tablero de ajedrez. Hay muchas
 maneras diferentes de colocar las fichas de dominó para hacer esto, pero una forma es cubrir la primera columna con 4 fichas de dominó de un extremo a otro, cubrir la segunda columna con 4 fichas de dominó y así sucesivamente.</p>
@@ -398,18 +413,18 @@ aplique a tableros de otras dimensiones.</p>
 <p><strong>La idea de una prueba:</strong> La proposición afirma que “existe” una cubierta perfecta. Al decir “existe”, significa que hay al menos una forma posible de cubrir el tablero. Por lo tanto, cualquier proposición como ésta puede probarse simplemente presentando una forma de cubrir el tablero y la proposición estará satisfecha.</p>
 <p><strong>La prueba:</strong> Observe que la siguiente imagen es una opción de cubierta perfecta.
 <img alt="tablero ajedrez 04" src="../_images/04_fig.png" /></p>
-<p>Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado la proposición 1.2</p>
-<p>.</p>
-<p>Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que hemos completado el argumento. Esta práctica fue introducida por el matemático Paul Halmos, que también se la llama la <em>lápida de Halmos</em> <a class="footnote-reference brackets" href="#nota2" id="id3">2</a></p>
+<p>Hemos demostrado por medio de un ejemplo que una cubierta perfecta existe. Con esto, hemos probado la proposición 1.2 [poner tumba]</p>
+<p>Típicamente ponemos un pequeño cuadrado al final de una prueba, indicando que hemos completado el argumento. Esta práctica fue introducida por el matemático Paul Halmos, que también se la llama la <em>lápida de Halmos</em> <a class="footnote-reference brackets" href="#nota2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<p>Hemos visto dos diferentes coverturas perfectas del tablero de ajedres. Cuántas pueden existir en total? Esta es una pregunta muy difícil, pero los matemáticos han encontrado la respuesta sorprendentemente grante: existen exactamente 12,988,816 coverturas perfectas.</p>
 <hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="nota1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
-</dd>
-<dt class="label" id="nota2"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
-<dd><p>Una historia apócrifa dice que Halmos consideraba que las pruebas estaban vivas hasta que se lograban probar. Una vez probadas, morían. Y así escribió una pequeña lápida para concluir cada una de sus pruebas.</p>
-</dd>
-</dl>
+<aside class="footnote brackets" id="nota1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>A lo largo de los bordes izquierdo e inferior del tablero de ajedrez hay números y letras. Estos son simplemente para etiquetar las filas y las columnas del tablero de ajedrez.</p>
+</aside>
+<aside class="footnote brackets" id="nota2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Una historia apócrifa dice que Halmos consideraba que las pruebas estaban vivas hasta que se lograban probar. Una vez probadas, morían. Y así escribió una pequeña lápida para concluir cada una de sus pruebas.</p>
+</aside>
 </section>
 </section>
 
@@ -438,11 +453,10 @@ aplique a tableros de otras dimensiones.</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="pruebas_intuitivas.html"
@@ -462,10 +476,7 @@ aplique a tableros de otras dimensiones.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -502,6 +513,7 @@ By Cummins, Ray
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -528,8 +540,8 @@ By Cummins, Ray
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
